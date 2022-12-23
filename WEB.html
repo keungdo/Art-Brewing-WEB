@@ -6,16 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebPage</title>
     <style>
+        @font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
         *{margin: 0; padding: 0;}
         li{list-style: none;}
+        a{text-decoration: none; color: inherit;}
         div{width: 70%; margin: auto; text-align: center;}
         img{width: 100%; vertical-align: middle;}
+        body{background-color: #c7d0e0; font-family: 'Pretendard-Regular';  }
+        .h1{position: fixed; bottom: 90px; right: 50px;}
+        .h2{position: fixed; bottom: 40px; right: 58px;}
+        a{font-size: 18px;padding: 5px 15px; background-color: rgba(45, 45, 45, 0.5); border: 3px solid rgba(238, 238, 238, 0.5); border-radius: 15px; color: #eeeeee;}
+        a:hover{color: #2d2d2d; background-color: rgba(238, 238, 238, 0.5); border-color: rgba(45, 45, 45, 0.5); transition: all 0.5s;}
     </style>
 </head>
 <body>
+        <h2 class="h1"><a href="">HOME</a></h1>
+        <h2 class="h2"><a href="#top">TOP</a></h1>
     <div>
         <ul>
-            <li><img src="./WEB/22.jpg" alt="WebPage"></li>
+            <li id="top"><img src="./WEB/22.jpg" alt="WebPage"></li>
             <li><img src="./WEB/23.jpg" alt="WebPage"></li>
             <li><img src="./WEB/24.jpg" alt="WebPage"></li>
             <li><img src="./WEB/25.jpg" alt="WebPage"></li>
